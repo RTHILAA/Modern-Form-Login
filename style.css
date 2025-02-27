@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background: url("bg.jpg") no-repeat center/cover fixed;
+    font-family: "Poppins", serif;
+  }
+  
+  a {
+    color: #b9b9b9;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: rgba(0, 0, 0, 0.2);
+  }
+  
+  .login-content {
+    position: relative;
+    backdrop-filter: blur(25px);
+    width: 450px;
+    border: 2px solid #b5afaf;
+    padding: 90px 32px 64px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.2);
+    color: #b9b9b9;
+  }
+  
+  .login-title {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 140px;
+    height: 8vh;
+    background: #b5afaf;
+    border-radius: 0 0 20px 20px;
+  }
+  
+  .login-title span {
+    color: #020101;
+    font-size: 5vh;
+  }
+  
+  .login-title::before,
+  .login-title::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 30px;
+    height: 30px;
+    background: transparent;
+  }
+  
+  .login-title::before {
+    left: -30px;
+    border-top-right-radius: 50%;
+    box-shadow: 15px 0 0 0 #b5afaf;
+  }
+  
+  .login-title::after {
+    right: -30px;
+    border-top-left-radius: 50%;
+    box-shadow: -15px 0 0 0 #b5afaf;
+  }
+  
+  .input-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+  }
+  
+  .input-field {
+    width: 100%;
+    height: 55px;
+    padding-inline: 20px 54px;
+    font-size: 16px;
+    color: #b9b9b9;
+    background: transparent;
+    border: 2px solid #b5afaf;
+    border-radius: 30px;
+    outline: none;
+    transition:  0.3s ease;
+}
+#user {
+  margin-bottom: 10px;
+}
+  
+  .input-field:focus {
+    border-color: #fff6f6;
+    box-shadow: 0 0 5px rgba(255, 246, 246, 0.5);
+  }
+  
+  .label {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    transition: 0.2s;
+    cursor: text;
+  }
+  
+  .input-field:focus ~ .label,
+  .input-field:valid ~ .label {
+    position: absolute;
+    font-size: 14px;
+    top: -10px;
+    left: 20px;
+    background: #b5afaf; 
+    color: #020101;
+    border-radius: 30px;
+    padding: 0 10px;
+}
+  
+  .input-wrapper i {
+    position: absolute;
+    top: 18px;
+    right: 25px;
+    font-size: 20px;
+  }
+  
+  .remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    width: 95%;
+    margin: auto;
+  }
+  
+  .remember-me input[type="checkbox"] {
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #b5afaf;
+    border-radius: 4px;
+    cursor: pointer;
+    position: relative;
+    transition: 0.3s ;
+    -webkit-transition: 0.3s ;
+    -moz-transition: 0.3s ;
+    -ms-transition: 0.3s ;
+    -o-transition: 0.3s ;
+    transform: translateY(1px);
+    -webkit-transform: translateY(1px);
+    -moz-transform: translateY(1px);
+    -ms-transform: translateY(1px);
+    -o-transform: translateY(1px);
+}
+  
+  .remember-me input[type="checkbox"]:hover {
+    box-shadow: 0 0 5px rgba(255, 246, 246, 0.5);
+  }
+  .remember-me input[type="checkbox"]:checked {
+    background: #b5afaf;
+  }
+  
+  .remember-me input[type="checkbox"]:checked::after {
+    content: "\2713";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #020101;
+    font-size: 12px;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+  
+  #submit {
+    width: 100%;
+    height: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    background: #fff6f6;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition:0.3s ease;
+    
+}
+  
+  #submit:hover {
+    background: #a0a0a0;
+    transform: scale(1.02);
+  }
+  
+  .sign-up {
+    text-align: center;
+  }
+  
+  .sign-up a {
+    font-weight: bold;
+  }
